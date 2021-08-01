@@ -11,13 +11,14 @@ body{
 }
 .container{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: white;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     transform-origin: top left;
+    overflow-x: hidden;
 }
 .active{
     left: 0;
@@ -45,7 +46,7 @@ body{
 }
 .page{
     width: 50%;
-    height: 100%;
+    height: 100vh;
     text-align: justify;
 }
 .page p{
