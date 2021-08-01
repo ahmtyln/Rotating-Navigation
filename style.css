@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(91, 101, 111);
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: top left;
+}
+.active{
+    left: 0;
+    top: 0;
+    transition: 1s ease-in;
+    transform-origin: top left;
+    transform: rotate(-20deg);
+}
+.menu-bar-container{
+    position: absolute;
+    top: -90px;
+    left: -90px;
+    width: 180px;
+    height: 180px;
+    background-color: tomato;
+    border-radius: 120px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+.menu-bar{
+    position: relative;
+    top: -35px;
+    left: -20px;
+}
+.page{
+    width: 50%;
+    height: 100%;
+    text-align: justify;
+}
+.page p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.page img{
+    width: 100%;
+    height: 70%;
+    margin: 5px 0 10px 0;
+}
+.open,
+.close{
+    width: 25px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: tomato;
+    cursor: pointer;
+}
+.open i{
+    color: white;
+    font-size: 30px;
+}
+.close i{
+    position:absolute;
+    color: white;
+    font-size: 35px;
+    top: 0;
+    left: 0;
+    display:none;
+}
+.ul{
+    position: fixed;
+    bottom: 150px;
+    left: 20px;
+}
+.ul ul{
+    position: absolute;
+    list-style: none;
+    left: -200px;
+}
+.ul ul li{
+    line-height: 50px;
+}
+.ul ul li a:hover{
+    color: tomato;
+}
+.ul ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.ul ul li a i{
+    padding-right: 10px;
+}
